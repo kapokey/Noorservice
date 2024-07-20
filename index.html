@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>noor-service</title>
+    <style>
+        #brand-title {
+            background-color: brown;
+            color: aliceblue;
+            font-size: 50px; /* Reduced font size for mobile */
+            text-align: center;
+            padding: 20px;
+        }
+        #mar {
+            display: flex;
+            flex-direction: column; /* Stack items vertically on mobile */
+            align-items: center;
+        }
+        .wellcome {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px; /* Reduced font size for mobile */
+            background-color: aqua;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            margin-top: 15px;
+            background-color: blanchedalmond;
+        }
+        #contact {
+            font-weight: bold;
+            font-size: 25px; /* Reduced font size for mobile */
+            border: 1px solid black;
+            padding: 10px;
+        }
+        details {
+            text-align: center;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column layout for mobile */
+            gap: 10px;
+        }
+        .card {
+            border: 1px solid black;
+            margin: 10px;
+            height: auto; /* Adjust height for mobile */
+        }
+        .card-header {
+            font-size: 18px; /* Reduced font size for mobile */
+            font-weight: bold;
+            text-align: center;
+        }
+        .card-body img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto; /* Center images */
+        }
+        .card-footer {
+            text-align: center;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 50px;
+        }
+        .japa img {
+            height: auto;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+        .bi-download {
+            font-size: 30px;
+            color: brown;
+        }
+        @media screen and (min-width: 768px) {
+            #brand-title {
+                font-size: 100px; /* Original font size for larger screens */
+            }
+            .wellcome {
+                font-size: 30px; /* Original font size for larger screens */
+            }
+            #contact {
+                font-size: 35px; /* Original font size for larger screens */
+            }
+            section {
+                grid-template-columns: repeat(4, 1fr); /* Original grid layout for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="brand-title">
+            <span>نور لخدمات النظافة العامة</span>
+        </div>
+    </header>
+    <nav>
+        <marquee>
+            <div id="mar">
+                <p class="wellcome">مرحباً بكم في مكتبنا المتواضع</p>
+            </div>
+        </marquee>
+    </nav>
+    <section>
+        <div class="card">
+            <div class="card-header">مكتبنا</div>
+            <div class="card-body">
+                <div><img src="public/image/office.jpg" alt="Office Image"></div>
+            </div>
+            <div class="card-footer">جوار بنك أمدرمان الوطني</div>
+        </div>
+        <div class="card">
+            <div class="card-header">بعض أعمالنا السابقة</div>
+            <div class="card-body">
+                <div class="japa">
+                    <div>
+                        <img src="public/image/hospital.jpg" alt="Hospital Image">
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">مستشفي الشرطة</div>
+        </div>
+        <div class="card">
+            <div class="card-header">بعض أعمالنا السابقة</div>
+            <div class="card-body">
+                <div><img src="public/image/hotel.jpg" alt="Hotel Image"></div>
+            </div>
+            <div class="card-footer">فندق الربوة</div>
+        </div>
+        <div class="card">
+            <div class="card-header">مكتبنا</div>
+            <div class="card-body">
+                <div><img src="public/image/label.jpg" alt="Label Image"></div>
+            </div>
+            <div class="card-footer">شارع قيادة الفرقة الثانية مشاه</div>
+        </div>
+    </section>
+    <footer>
+        <details open>
+            <summary id="contact">للتواصل معنا</summary>
+            <div id="contact">nuralshfei@gmail.com</div>
+            <div id="contact">0126368679 - 0913457766</div>
+        </details>
+        <div class="bi bi-download"><a href="public/pdf/book.pdf">تحميل كتيب الشركة</a></div>
+        <div class="bi bi-download"><a href="public/video/video-ads.mp4">فيديو الإعلان للشركة</a></div>
+    </footer>
+</body>
+</html>
